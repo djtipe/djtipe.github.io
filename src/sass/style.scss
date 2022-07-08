@@ -1,0 +1,26 @@
+@import "lib/bootstrap-reboot.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+@import "common/variables";
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import "blocks/promo";
+@import "blocks/title";
+
+
+
+//media must be in the bottom of the page
+@import "common/_media";
