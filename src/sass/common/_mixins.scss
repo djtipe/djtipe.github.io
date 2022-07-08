@@ -1,0 +1,13 @@
+@mixin before_circle {
+    &:before {   
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -1px;
+        height: 36px;
+        width: 36px;
+        background-color: $main-color;
+        border-radius: 100%;
+        z-index: -2;
+    }
+}
