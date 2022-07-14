@@ -24,5 +24,12 @@
         height: 70px;
         background-color: #fff;
     }
-    
+    &__link {
+        &:hover {
+            @include main_color_shadow;
+            path {
+                fill: $main-color;                
+            }
+        }
+    }
 }

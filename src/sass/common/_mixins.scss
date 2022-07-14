@@ -11,3 +11,7 @@
         z-index: -2;
     }
 }
+
+@mixin main_color_shadow {
+    box-shadow: 1px 2px 92px 67px rgba(26,137,166,0.16);
+}
