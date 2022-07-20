@@ -8,6 +8,10 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    color: #fff;
+}
+body {
+    background-color: #1A1918;
 }
 a {
     text-decoration: none;
@@ -18,12 +22,23 @@ a {
     margin: 0 auto;
 }
 
+.devider {
+    @include devider;
+}
+
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
 @import "blocks/promo";
 @import "blocks/title";
 @import "blocks/buttons";
 @import "blocks/sidepanel";
 @import "blocks/hamburger";
-
+@import "blocks/about";
+@import "blocks/resume";
+@import "blocks/skills";
 
 
 //media must be in the bottom of the page

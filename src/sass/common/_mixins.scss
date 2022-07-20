@@ -15,3 +15,49 @@
 @mixin main_color_shadow {
     box-shadow: 1px 2px 92px 67px rgba(26,137,166,0.16);
 }
+
+@mixin devider {
+    margin: 25px auto 0;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    z-index: -2;
+}
+
+@mixin white-line {
+    &:after {
+        content: '';
+        position: absolute;
+        width: 42px;
+        height: 0px;
+        border: 1px solid #FFFFFF;
+        // transform: rotate(180deg);
+        left: -42px;
+        top: 15px;
+    }
+}
+@mixin white-lane-vertical {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;       
+        background: #53C1DE; 
+        border-radius: 100%;
+        left: -49px;
+        top: 28px;   
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 90%;
+        background-color: #fff;
+        // border: 1px solid #FFFFFF;
+        // transform: rotate(90deg);
+        top: 43px;
+        left: -42px;
+    }
+}
