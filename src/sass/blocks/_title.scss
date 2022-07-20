@@ -20,4 +20,13 @@
         line-height: 25px;
         }
     margin-top: 20px;
+    &__first-section {
+        position: relative;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+            top: -6px;
+        }
+    }
 }

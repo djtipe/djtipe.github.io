@@ -2,15 +2,6 @@
     padding-top: 128px;
     .title {
         text-align: center;
-        &_fz16 {
-            position: relative;
-            @include before_circle;
-            &:before {
-                left: 50%;
-                transform: translateX(-50%);
-                top: -5px;
-            }
-        }
         &_fz36 {
             margin-top: 6px;
         }
