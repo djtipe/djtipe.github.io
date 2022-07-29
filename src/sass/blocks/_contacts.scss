@@ -1,0 +1,75 @@
+.contacts {
+    padding: 120px 0 91px;
+    &__wrapper {
+        display: grid;
+        grid-template: 600px / 400px auto;
+        justify-content: space-around;
+    }
+    &__title {
+        position: relative;
+        @include before_circle;
+        left: 12px;
+        margin-top: 6px;
+        &:before {
+            left: -12px;
+            top: -6px;
+        }
+    }
+    &__subtitle {
+        margin-top: 5px;
+    }
+    .devider {
+        margin-top: 5px;
+        margin-left: 0;
+    }
+    &__social {
+        margin-top: 20px;
+        &__link {
+            margin-right: 25px;
+        }
+    }
+    &__form {
+        margin-top: 30px;
+        display: grid;
+        grid-template: 45px 190px 45px / 280px 280px;
+        row-gap: 28px;
+        column-gap: 25px;
+    }
+    input, textarea {
+        border: 1px solid #FFFFFF;
+        background-color: $bg-color;
+        padding: 13px 20px;
+    }
+    &__input, &__textarea {
+        position: relative;
+        label {
+            position: absolute;
+            background-color: $bg-color;
+            padding: 0px 8px;
+            left: 12px;
+            top: -12px;
+        }
+        input {
+            width: 280px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        textarea {
+            width: 585px;
+            height: 190px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            resize: none;
+        }
+    }
+    &__textarea {
+        grid-column: 1 / 3;
+    }
+    .btn {
+        width: 219px;
+        background-color: $main-color;
+        border: none;
+    }
+}

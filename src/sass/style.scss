@@ -11,7 +11,7 @@
     color: #fff;
 }
 body {
-    background-color: #1A1918;
+    background-color: $bg-color;
 }
 a {
     text-decoration: none;
@@ -41,6 +41,7 @@ ul {
 @import "blocks/skills";
 @import "blocks/portfolio";
 @import "blocks/price";
+@import "blocks/contacts";
 
 
 //media must be in the bottom of the page
