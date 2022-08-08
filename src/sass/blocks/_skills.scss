@@ -9,10 +9,10 @@
     &__tech {
         padding-top: 60px;
         display: grid;
-        grid-template-columns: repeat(4, 270px);
+        grid-template-columns: repeat(auto-fit, 270px);
         grid-template-rows: repeat(2, 270px);
-        column-gap: 13px;
-        row-gap: 13px;
+        column-gap: 10px;
+        row-gap: 10px;
         justify-content: center;
     }
     &__item {

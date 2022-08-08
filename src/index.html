@@ -146,7 +146,7 @@
             <div class="promo__wrapper">
                 <div class="title title_fz16 promo__subtitle">Меня зовут Михаил Мягких</div>
                 <h1 class="title">Я web-разработчик из города Москва.</h1>
-                <h2 class="title title_fz30">Делаю магию.<br>Превращаю нажатия клавиш в результат.</h2>
+                <!-- <h2 class="title title_fz30">Делаю магию.<br>Превращаю нажатия клавиш в результат.</h2> -->
                 <div class="promo__reference-wrapper">
                     <a href="#" class="promo__portfolio button">Портфолио</a>
                     <a href="#" class="promo__aboutme">Обо мне</a>
@@ -159,7 +159,10 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__image">
-                    <img src="img/aboutMe.jpg" alt="my photo">
+                    <picture>
+                        <source type="image/webp" srcset="img/aboutMe.webp">
+                        <img src="img/aboutMe.jpg" alt="My photo">
+                    </picture>
                 </div>
                 <div class="about__text">
                     <div class="title title_fz16 about__subtitle">Про меня</div>
@@ -285,7 +288,7 @@
     <section class="skills">
         <div class="container">
             <div class="title title_fz16 title__first-section">Навыки</div>
-            <div class="title title fz36">Что я использую в работе</div>
+            <div class="title title_fz36">Что я использую в работе</div>
             <div class="devider"></div>
             <div class="skills__tech">
                 <div class="skills__item">
@@ -389,7 +392,7 @@
     <section class="portfolio">
         <div class="container">
             <div class="title title_fz16 portfolio__title title__first-section">Портфолио</div>
-            <div class="title title fz36 portfolio__title">Мои работы</div>
+            <div class="title title_fz36 portfolio__title">Мои работы</div>
             <div class="devider"></div>
             <div class="portfolio__wrapper">
                 <div class="portfolio__item"><a target="_blank" href="https://djtipe.github.io/uber/"><img src="img/1_uber.jpg" alt="uber"></a></div>
@@ -477,7 +480,18 @@
                             <textarea name="message" id="message" cols="30" rows="10"></textarea>
                             <label for="message">Ваше сообщение</label>
                         </div>
-                        <button class="btn">Отправить сообщение</button>
+                        <div class="contacts__bottom">
+                            <button class="btn">Отправить сообщение</button>
+                            <div class="contacts__privacy">
+                                <input type="checkbox" name="policy" id="policy">
+                                <div class="contacts__privacy_text">
+                                    Я согласен с 
+                                    <a href="/privacy.html" target="_blank">политикой конфидециальности</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+
                     </form>
                 </div>
             </div>
